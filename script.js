@@ -131,6 +131,10 @@ function barre () {
 		if (progress.value < 100) {
 			progress.value++;
 			progressDiv.classList.add('progress');
+			blocs.blocFirstCard.htmlElement.classList.remove('activeKeyframes');
+			blocs.blocThirdCard.htmlElement.classList.remove('activeKeyframes');
+			blocs.blocSecondCard.htmlElement.classList.remove('activeKeyframes2');
+			blocs.blocFourthCard.htmlElement.classList.remove('activeKeyframes2');
 		}
 
 		if (progress.value < 10) {
