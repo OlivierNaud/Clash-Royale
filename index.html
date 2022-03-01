@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Clash Royale</title>
+</head>
+<body id="body">
+	<div class="cover">
+		<section class="consigne">
+			<div>
+				<p>Press the keys, <strong>a, z, e, r,</strong> to raise one of the cards and click to exchange the card</p>
+			</div>
+		</section>
+		<section id="nextCard">
+			<div class="backNextCard"></div>
+		</section>
+		<section id="board">
+			<div class="backCard">
+				<div class="shadowCard marginLeftShadowCard"></div>
+				<div class="shadowCard"></div>
+				<div class="shadowCard"></div>
+				<div class="shadowCard"></div>
+			</div>
+			<div class="blocs">
+				<div class="blocFirstCard"></div>
+				<div class="blocSecondCard"></div>
+				<div class="blocThirdCard"></div>
+				<div class="blocFourthCard"></div>
+			</div>
+			<div class="elementBarreElexir">
+				<div class="dropElexir">
+					<img src="img/elixir-clash-royale.png">
+				</div>
+				
+				<div class="textBarreElexir">
+					<p class="runElexir">0</p>
+					<p class="maxElexir"><strong>Max: 10</strong></p>
+				</div>
+			</div>
+			<div id="progress">
+			    <progress class="progress" value="0" max="100"></progress>
+
+			    <span class="barWhiteBlocFirstCard"></span>
+			    <span class="barWhiteBlocSecondCard"></span>
+			    <span class="barWhiteBlocThirdCard"></span>
+			    <span class="barWhiteBlocFourthCard"></span>
+
+			    <span class="separation" style="--i:1;"></span>
+			    <span class="separation" style="--i:2;"></span>
+			    <span class="separation" style="--i:3;"></span>
+			    <span class="separation" style="--i:4;"></span>
+			    <span class="separation" style="--i:5;"></span>
+			    <span class="separation" style="--i:6;"></span>
+			    <span class="separation" style="--i:7;"></span>
+			    <span class="separation" style="--i:8;"></span>
+			    <span class="separation" style="--i:9;"></span>
+
+			    <div class="transparentBar"></div>
+
+			</div>
+	<!-- 	<div class="barreElexir">
+				<div id="barre" class="barre"></div>
+			</div> -->
+		</section>
+		
+	</div>
+</body>
+<script src="script.js"></script>
+</html>

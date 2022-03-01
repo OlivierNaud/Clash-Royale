@@ -1,0 +1,362 @@
+body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+	background-image: url(img/fondClashRoyale.jpg);
+	background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    font-family: 'Supercell-Magic';
+}
+
+p {
+	margin: 0;
+}
+
+.cover {
+	height: 872.09px;
+    width: 403.19px;
+    background-image: url(img/clashroyale.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+/*CONSIGNE*/
+
+.consigne {
+	position: absolute;
+	overflow: hidden;
+	top: 37%;
+	width: 30%;
+	left: 5%;
+	font-size: 32px;
+	line-height: 55px;
+
+}
+
+.consigne div p strong {
+	-webkit-text-stroke: 2px #0cafb2;
+}
+
+/*NEXT CARD*/
+
+#nextCard {
+	width: 10%;
+    position: relative;
+    top: 94%;
+    left: 4.5%;
+    height: 5%;
+}
+
+.backNextCard {
+	display: flex;
+}
+
+.backNextCard .imgCardTableau3 {
+	width: 100%;
+}
+
+.backNextCard .imgElexir {
+	width: 25%;
+    position: absolute;
+    top: 90%;
+    left: 37%;
+}
+
+.backNextCard .elexirText {
+	color: white;
+    font-size: 7px;
+    position: absolute;
+    top: 95%;
+    left: 43%;
+}
+
+
+
+
+/*BACK FACE GAME CARD*/
+
+.backCard {
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 75%;
+}
+
+.shadowCard {
+	background-color: #13132f;
+    border-radius: 6px;
+    height: 80%;
+    width: 20%;
+    margin: 3% 0 0 3%;
+}
+
+.marginLeftShadowCard {
+	margin-left: 6%;
+}
+
+
+/*CARD GAME*/
+
+#board {
+	width: 83%;
+	background-image: url(img/tableauClashRoyale.png);
+    position: relative;
+    top: 79%;
+    left: 17%;
+    height: 16%;
+    border-bottom-right-radius: 20px;
+}
+
+.blocs {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 75%;
+}
+
+.blocFirstCard, .blocSecondCard, .blocThirdCard, .blocFourthCard {
+	position: relative;
+	width: 21%;
+}
+
+.blocSecondCard, .blocThirdCard, .blocFourthCard {
+	margin-top: 2%;
+}
+
+.blocFirstCard {
+	border-radius: 6px;
+    margin: 3.5% 0 0 2%;
+}
+
+.activeKeyframes {
+	animation: cardMouves 0.2s infinite ease;
+}
+
+.activeKeyframes2 {
+	animation: cardMouves2 0.2s infinite ease;
+}
+
+@keyframes cardMouves {
+	from {
+		transform: rotateZ(0.4deg);
+	}
+	to {
+		transform: rotateZ(-0.4deg);
+	}
+}
+
+@keyframes cardMouves2 {
+	from {
+		transform: rotateZ(-0.4deg);
+	}
+	to {
+		transform: rotateZ(0.4deg);
+	}
+}
+
+/*CARD DECK GAME*/
+
+.blocFirstCard .imgCardTableau2, .blocSecondCard .imgCardTableau2, .blocThirdCard .imgCardTableau2, .blocFourthCard .imgCardTableau2 {
+	width: 104%;
+}
+
+.blocFirstCard .imgCardTableau2{
+    top: -4%;
+    left: 14%;
+}
+
+.blocSecondCard .imgCardTableau2{
+    left: 25.4%;
+}
+
+.blocThirdCard .imgCardTableau2{
+    left: 35%;
+}
+
+.blocFourthCard .imgCardTableau2{
+    left: 45.5%;
+}
+
+.imgCardTableau2, .imgElexir, .elexirText {
+	position: absolute;
+}
+
+/*IMAGE ELEXIR*/
+
+.blocFirstCard .imgElexir, .blocSecondCard .imgElexir, .blocThirdCard .imgElexir, .blocFourthCard .imgElexir {
+	width: 35%;
+	position: relative;
+	top: 70%;
+}
+
+.blocFirstCard .imgElexir {
+    left: 49%;
+}
+
+.blocSecondCard .imgElexir {
+    left: 62%;
+}
+
+.blocThirdCard .imgElexir {
+    left: 72%;
+}
+
+.blocFourthCard .imgElexir {
+    left: 82%;
+}
+
+/*ELEXIR TEXT*/
+
+.blocFirstCard .elexirText, .blocSecondCard .elexirText, .blocThirdCard .elexirText, .blocFourthCard .elexirText {
+    color: white;
+    top: 77%;
+    font-size: 0.7vw;	
+}
+
+.blocFirstCard .elexirText {
+    left: 60.5%;
+}
+
+.blocSecondCard .elexirText {
+    left: 73%;
+}
+
+.blocThirdCard .elexirText {
+    left: 83%;
+}
+
+.blocFourthCard .elexirText {
+    left: 94%;
+}
+
+/*BARRE D'ELEXIR*/
+
+#progress{
+    width: 90%;
+    position: absolute;
+    top: 75%;
+    left: 6%;
+    display: flex;
+    z-index: 10;
+
+
+}
+progress{
+    width: 100%;
+    height: 20px;
+    border-right: 4px solid rgba(0,0,0,.5);
+    border-top: 2px solid rgba(0,0,0,.5);
+    border-bottom: 2px solid rgba(0,0,0,.5);
+    border-radius: 4px;
+}
+
+progress::-webkit-progress-value{
+	border-radius: 2px;
+    background: linear-gradient(to top, #ff00c4 55%, #fb97d8  55%, #fb97d8  95%, #ff00c4 97%);
+}
+
+.progress[value]::-webkit-progress-value {
+    transition: width 0.5s;
+    background: linear-gradient(to top, #ff00c4 55%, #fb97d8  55%, #fb97d8  95%, #ff00c4 97%);
+}
+
+progress::-webkit-progress-bar{
+    background: transparent;
+}
+
+
+/*ELEMENT ELEXIR*/
+
+.elementBarreElexir {
+	position: absolute;
+    display: flex;
+    top: 75%;
+    height: 25%;
+    z-index: 100;
+}
+
+.dropElexir {
+    z-index: 1000;
+
+}
+
+.dropElexir img {
+	height: 100%;
+    position: relative;
+    left: 10%;
+    top: -20%;
+}
+
+.runElexir {
+	position: relative;
+    top: -10%;
+    color: white;
+    left: 5%;
+    font-size: 15px;
+    letter-spacing: -2px;
+}
+
+.maxElexir {
+    position: relative;
+    top: -8%;
+    font-size: 12px;
+    left: 4%;
+    color: #e6a2e6;
+    -webkit-text-stroke: 0.2px black;
+}
+
+.barWhiteBlocFirstCard, .barWhiteBlocSecondCard, .barWhiteBlocThirdCard, .barWhiteBlocFourthCard{
+	width: 0%;
+    background-color: transparent;
+    position: absolute;
+    top: 5%;
+    border-top: 1px white solid;
+    border-right: 1px white solid;
+    border-bottom: 1px white solid;
+    height: 80%;
+    z-index: 100;
+}
+
+.separation {
+	position: absolute;
+    top: 10%;
+    left: calc(10% * var(--i));
+    height: 80%;
+    width: 0.2%;
+    background-color: rgba(0,0,0,.5);
+}
+
+
+
+
+
+.fusee {
+	position: absolute;
+    width: 6.5%;
+    height: 500%;
+    top: -207%;
+    transform: rotateZ(90deg);
+    background: linear-gradient( to bottom, #ffffff1a, #fff0 );
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient( to bottom, white, #fff0 ) 1 100%;
+    animation: easy 1s infinite;
+}
+
+@keyframes easy {
+    from {
+        left: 10%;
+    }
+
+    to {
+        left: 78%;
+    }
+}
